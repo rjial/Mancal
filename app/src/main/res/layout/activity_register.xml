@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Login">
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="62dp"
+        android:ems="18"
+        android:hint="Masukkan Username Anda"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="375dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="26dp"
+        android:layout_height="36dp"
+        android:src="@drawable/logoakun"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="403dp"
+        android:src="@drawable/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Daftar"
+        android:textColor="#242424"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <EditText
+        android:layout_width="347dp"
+        android:layout_height="56dp"
+        android:ems="18"
+        android:hint="Masukkan Password Anda"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="520dp" />
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="62dp"
+        android:ems="18"
+        android:hint="Masukkan email Anda"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="36dp"
+        android:src="@drawable/logoemail"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="464dp" />
+
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="36dp"
+        android:src="@drawable/password"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="534dp" />
+
+    <Button
+        android:layout_width="358dp"
+        android:layout_height="59dp"
+        android:backgroundTint="@color/bluesea"
+        android:text="Daftar"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="610dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
