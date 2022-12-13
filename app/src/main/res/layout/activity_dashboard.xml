@@ -5,11 +5,168 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity_Dashboard"
-    android:padding="30dp">
-    <TextView
+    android:padding="16dp">
+    <LinearLayout
+        android:id="@+id/linier1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="halo ini adalah tutorial splash screen "
-        android:textSize="30sp"/>
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_iklan"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diskon 80%"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="1dp" />
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bagi Pengguna Pertama"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="20dp"/>
+"
+            />
+        <Button
+            android:id="@+id/buttoniklan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking sekarang juga"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="25dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linier1"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:text="Masukkan Lokasi Venue" />
+    <EditText
+        android:id="@+id/idtext1"
+        android:layout_below="@id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="60dp"
+        android:layout_marginTop="10dp"
+        android:hint="Pilih Lokasi Venue"
+        android:drawableStart="@drawable/icon_lokasi"
+        android:drawableEnd="@drawable/icon_next"
+        android:drawablePadding="10dp"
+        android:padding="16dp"
+        android:background="@drawable/custom_input"/>
+    <LinearLayout
+        android:id="@+id/ln1"
+        android:layout_below="@id/idtext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idtext1"
+            android:background="@drawable/card_waktu"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            >
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dari"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Hari, Tanggal"
+                android:textSize="17dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pukul"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idtext1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_waktu"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Sampai"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:text="Hari, Tanggal"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:text="Pukul"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@+id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/custom_button"
+        android:src="@drawable/custom_button"
+        android:minHeight="50dp"
+        style="@style/Theme.Mancal.Button"
+        android:text="Cari Venue"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+
 
 </RelativeLayout>
