@@ -13,6 +13,7 @@ class HasilQRActivity : AppCompatActivity() {
         txtHasilQR = findViewById(R.id.txtHasilQR)
         txtHasilQR.text = intent.getStringExtra("HASIL")
         // asdasdasdasd
+//        melakukan perubahan qr
 
     }
 }
