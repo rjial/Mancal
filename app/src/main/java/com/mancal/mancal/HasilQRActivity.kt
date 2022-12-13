@@ -12,6 +12,7 @@ class HasilQRActivity : AppCompatActivity() {
         val intent = intent
         txtHasilQR = findViewById(R.id.txtHasilQR)
         txtHasilQR.text = intent.getStringExtra("HASIL")
+        // asdasdasdasd
 
     }
 }
