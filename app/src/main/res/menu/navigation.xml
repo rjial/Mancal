@@ -7,4 +7,5 @@
     <item
         android:id="@+id/navigation_sepeda"
         android:title="Sepeda" />
+
 </menu>
