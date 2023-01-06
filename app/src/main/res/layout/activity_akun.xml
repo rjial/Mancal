@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    Bantuan-->
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/help"
+            android:layout_marginRight="10dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fontFamily="@font/inter2"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Bantuan"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="13dp"></TextView>
+    </LinearLayout>
+
+<!--    Tentang aplikasi-->
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/info"
+            android:layout_marginRight="10dp"
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Tentang Aplikasi"
+            android:padding="2dp"
+            android:textAlignment="viewStart"
+            android:textSize="13dp"
+            android:fontFamily="@font/inter2"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:textColor="@color/black"
+            >
+
+        </TextView>
+    </LinearLayout>
+
+<!--    Keluar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/exit"
+            android:layout_marginRight="10dp"
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Keluar"
+            android:padding="2dp"
+            android:textAlignment="viewStart"
+            android:textSize="13dp"
+            android:fontFamily="@font/inter2"
+            android:textColor="@color/black"></TextView>
+    </LinearLayout>
+
+
+</LinearLayout>
