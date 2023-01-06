@@ -167,8 +167,8 @@
             android:text="Lanjutkan"
             android:fontFamily="@font/inter_bold"
             android:textColor="@color/white"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp">
+        </Button>
 
     </LinearLayout>
 
