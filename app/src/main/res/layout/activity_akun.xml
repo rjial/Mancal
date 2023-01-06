@@ -24,9 +24,7 @@
         <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
             android:fontFamily="@font/inter2"
-            android:gravity="center"
             android:padding="2dp"
             android:text="Bantuan"
             android:textAlignment="viewStart"
@@ -60,8 +58,6 @@
             android:textAlignment="viewStart"
             android:textSize="13dp"
             android:fontFamily="@font/inter2"
-            android:layout_gravity="left"
-            android:gravity="center"
             android:textColor="@color/black"
             >
 
