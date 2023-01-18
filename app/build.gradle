@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'kotlin-parcelize'
 }
 
 android {
@@ -36,7 +38,7 @@ android {
 }
 
 dependencies {
-
+    def lifecycle_version = "2.2.0"
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation 'androidx.cardview:cardview:1.0.0'
@@ -47,6 +49,15 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
     implementation("io.github.g00fy2.quickie:quickie-bundled:1.5.2")
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.0.2'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation 'com.mapbox.maps:android:10.5.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-services:6.9.0'
+    implementation "com.mapbox.navigation:android:2.9.5"
+    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-turf:6.9.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'

@@ -125,14 +125,40 @@
         android:layout_marginRight="20dp"
         android:orientation="vertical"
         >
-        <EditText
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/custom_input"-->
+<!--            android:hint="Durasi"-->
+<!--            android:padding="10dp"-->
+<!--            android:drawableEnd="@drawable/icon_dropdown">-->
+<!--        </EditText>-->
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/custom_input"
-            android:hint="Durasi"
-            android:padding="10dp"
-            android:drawableEnd="@drawable/icon_dropdown">
-        </EditText>
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Durasi"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/inter_bold"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+                <Spinner
+                    android:id="@+id/spDurasiPesanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" jam"/>
+            </LinearLayout>
+
+        </RelativeLayout>
         <TextView
             android:id="@+id/judulharga"
             android:layout_width="match_parent"
@@ -157,6 +183,7 @@
         </TextView>
 
         <Button
+            android:id="@+id/btnLanjutReview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"

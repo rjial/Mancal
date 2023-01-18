@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +16,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mancal"
         tools:targetApi="31">
+        <activity
+            android:name=".NavigasiActivity"
+            android:exported="false">
+
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SelectDestinationVenueActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".VenueDestinationActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".Activity_Bayar_Gagal"
             android:exported="false">
@@ -57,13 +82,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity_fixvenue"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".Activity_ReviewPesanan"
             android:exported="false">
             <meta-data
@@ -91,10 +109,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".ui.login.Activity_Register"
-            android:exported="false"
-            android:label="@string/title_activity_register" />
         <activity
             android:name=".Activity_Login"
             android:exported="false">

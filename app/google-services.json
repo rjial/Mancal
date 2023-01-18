@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "112681609733",
+    "project_id": "mancal-2fb76",
+    "storage_bucket": "mancal-2fb76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112681609733:android:cb4775adcc93750c794a6c",
+        "android_client_info": {
+          "package_name": "com.mancal.mancal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112681609733-12sm7gbebo381ndedbu9vs5dq2b5ibuh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjmgi9-ODupiJZwl1sMYJfT63keUcd2Kk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112681609733-12sm7gbebo381ndedbu9vs5dq2b5ibuh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

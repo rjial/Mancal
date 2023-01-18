@@ -30,10 +30,11 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
         Handler().postDelayed({ //setelah loading maka akan langsung berpindah ke home activity
-                              hasilQR.launch(null)
-//            val home = Intent(this@MainActivity, Activity_Dashboard::class.java)
-//            startActivity(home)
-//            finish()
+//                              hasilQR.launch(null)
+            val home = Intent(this@MainActivity, Activity_Dashboard::class.java)
+//            val home = Intent(this@MainActivity, NavigasiActivity::class.java)
+            startActivity(home)
+            finish()
         }, waktu_loading.toLong())
     }
 }
