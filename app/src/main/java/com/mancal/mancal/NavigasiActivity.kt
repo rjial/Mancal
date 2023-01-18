@@ -26,6 +26,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import com.mancal.mancal.model.Invoice
 import com.mancal.mancal.model.Pesanan
 import com.mancal.mancal.viewmodel.JarakViewModel
 import com.mancal.mancal.viewmodel.TimerViewModel
@@ -149,6 +150,8 @@ class NavigasiActivity : AppCompatActivity() {
 
     private lateinit var routeLineView: MapboxRouteLineView
 
+    private lateinit var durasiLast: String
+
     private val routeArrowApi: MapboxRouteArrowApi = MapboxRouteArrowApi()
 
     private lateinit var routeArrowView: MapboxRouteArrowView
@@ -182,6 +185,7 @@ class NavigasiActivity : AppCompatActivity() {
     private val btnSelesaiNavigasi: Button by lazy {
         findViewById<Button>(R.id.btnSelesaiNavigasi)
     }
+
 //    private val stopNavigasi: ImageView by lazy {
 //        findViewById<ImageView>(R.id.stopNavigasi)
 //    }
@@ -509,6 +513,8 @@ class NavigasiActivity : AppCompatActivity() {
                     sepeda.addOnSuccessListener {
                         alertDialog.dismiss()
                         var intentBerhasil: Intent = Intent(this, Activity_Lock_Berhasil::class.java)
+                        var invoice: Invoice = Invoice(pesanan.sepedaAwal, pesanan.venueTujuan, pesanan.getTotalBayar(), durasiLast)
+                        intentBerhasil.putExtra("INVOICE", invoice)
                         startActivity(intentBerhasil)
                     }
                     sepeda.addOnFailureListener {
@@ -527,7 +533,7 @@ class NavigasiActivity : AppCompatActivity() {
 // add long click listener that search for a route to the clicked destination
             if (intent.hasExtra("PESANAN")) {
                 pesanan = intent.getParcelableExtra<Pesanan>("PESANAN")!!
-                if (pesanan.sepedaAwal.kunci == false) finish()
+//                if (pesanan.sepedaAwal.kunci == false) finish()
                 var sepeda = Firebase.firestore.collection("sepeda").document(pesanan.sepedaAwal.id).update("kunci", !pesanan.sepedaAwal.kunci)
                 sepeda.addOnSuccessListener {
                     findRoute(pesanan.venueTujuan.getPoint())
@@ -537,6 +543,7 @@ class NavigasiActivity : AppCompatActivity() {
                     val durasi = 5
                     txtAkumulasiHargaNavigasi.text = pesanan.getAkumulasiHarga(it.toInt())
                     txtWaktuPerjalananNavigasi.text = timerViewModel.formatDuration()
+                    durasiLast = timerViewModel.formatDuration()
 //                    TurfMeasurement.distance(pesanan.sepedaAwal.venue.getPoint(), pesanan.venueTujuan.getPoint())
                 }
 //                if (this@NavigasiActivity::jarakViewModel.isInitialized) {

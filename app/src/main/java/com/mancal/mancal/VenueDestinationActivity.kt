@@ -158,7 +158,7 @@ class VenueDestinationActivity : AppCompatActivity() {
                 var venue = sepeda.get("venue") as DocumentReference
                 venue.get().addOnSuccessListener { resultVenue ->
                     Log.d("FIRESTOREREFERENCE", resultVenue.get("title") as String)
-                    venueFirstData = Venue(resultVenue.get("title") as String, resultVenue.get("address") as String, (resultVenue.get("bicycleCount") as Long).toInt(), resultVenue.get("latitude") as Double, resultVenue.get("longitude") as Double)
+                    venueFirstData = Venue(resultVenue.id, resultVenue.get("title") as String, resultVenue.get("address") as String, (resultVenue.get("bicycleCount") as Long).toInt(), resultVenue.get("latitude") as Double, resultVenue.get("longitude") as Double)
                     prepareVenue(venueFirstData)
                     sepedaFirstData = Sepeda(sepeda.id, sepeda.get("model") as String, venueFirstData, sepeda.get("kunci") as Boolean)
                 }

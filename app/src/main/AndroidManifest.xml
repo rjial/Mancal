@@ -17,10 +17,15 @@
         android:theme="@style/Theme.Mancal"
         tools:targetApi="31">
         <activity
+            android:name=".PrePaymentActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".NavigasiActivity"
             android:exported="false">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

@@ -17,7 +17,7 @@ data class Sepeda(val id: String, val model: String, val venue: Venue, val kunci
             try {
                 var venue = data.result.get("venue") as DocumentReference
                 var dataVenue = venue.get().result
-                var objekVenue = Venue(dataVenue.get("title") as String, dataVenue.get("address") as String, (dataVenue.get("bicycleCount") as Long).toInt(), dataVenue.get("latitude") as Double, dataVenue.get("longitude") as Double)
+                var objekVenue = Venue(venue.id, dataVenue.get("title") as String, dataVenue.get("address") as String, (dataVenue.get("bicycleCount") as Long).toInt(), dataVenue.get("latitude") as Double, dataVenue.get("longitude") as Double)
                 return Sepeda(data.result.id, data.result.get("model") as String, objekVenue, data.result.get("kunci") as Boolean)
             } catch (exc: IllegalStateException) {
                 throw exc

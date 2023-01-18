@@ -31,6 +31,7 @@ class SelectDestinationVenueActivity : AppCompatActivity() {
                 for (venue in it) {
                     viewmodel.addVenue(
                         Venue(
+                            venue.id,
                             venue.data["title"] as String,
                             venue.data["address"] as String,
                             if (venue.data["bicycleCount"] != null) (venue.data["bicycleCount"] as Long).toInt() else 0,

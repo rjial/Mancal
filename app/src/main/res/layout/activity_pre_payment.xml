@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_ReviewPesanan"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_input"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/spdgunung">
+
+        </ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <TextView
+            android:id="@+id/txtvenueawalPrePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Venue Awal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter2_bold"
+            android:textSize="13dp"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/alamatvenueawalPrePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:fontFamily="@font/inter2"
+            android:textSize="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <!--    Bagian Layout Tujuan Venue -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <TextView
+            android:id="@+id/tujuanvenuePrePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tujuan Venue"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter2_bold"
+            android:textSize="13dp"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/alamattujuanvenuePrePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:fontFamily="@font/inter2"
+            android:textSize="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            >
+        </TextView>
+    </LinearLayout>
+    <!--    Bagian Layout Jenis Sepeda-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:id="@+id/jenissepedaPrePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Sepeda"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter2_bold"
+            android:textSize="13dp"
+
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/textjenisepedaPrePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sepeda Merk A"
+            android:fontFamily="@font/inter2"
+            android:textSize="13dp"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            >
+        </TextView>
+    </LinearLayout>
+    <!--    Bagian Layout durasi-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        >
+        <!--        <EditText-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:background="@drawable/custom_input"-->
+        <!--            android:hint="Durasi"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:drawableEnd="@drawable/icon_dropdown">-->
+        <!--        </EditText>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Durasi"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/inter_bold"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+                <TextView
+                    android:id="@+id/txtDurasiPrePayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" jam"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Bayar"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter2_bold"
+            android:textSize="13dp"
+
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/hargaPrePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp.10.000,-"
+            android:fontFamily="@font/inter2"
+            android:textSize="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            >
+        </TextView>
+
+        <Button
+            android:id="@+id/btnLanjutPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/custom_button"
+            android:src="@drawable/custom_button"
+            android:minHeight="50dp"
+            style="@style/Theme.AppCompat.DayNight"
+            android:text="Lanjutkan"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/white"
+            android:textSize="16sp">
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -6,5 +6,7 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class Invoice(
     val sepeda: Sepeda,
-    val venue: Venue): Parcelable {
+    val venue: Venue,
+    val totalBayar: Int,
+    val durasi: String): Parcelable {
 }

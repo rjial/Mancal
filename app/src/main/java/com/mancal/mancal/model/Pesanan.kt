@@ -7,6 +7,7 @@ import java.util.*
 
 @Parcelize
 data class Pesanan(val sepedaAwal: Sepeda, val venueTujuan: Venue, val durasi: Int) : Parcelable {
+    private var totalBayar: Int = 0
     public fun getHarga() : Int {
         return durasi * 10000;
     }
@@ -14,6 +15,10 @@ data class Pesanan(val sepedaAwal: Sepeda, val venueTujuan: Venue, val durasi: I
         return NumberFormat.getCurrencyInstance(Locale("id", "ID")).format(getHarga());
     }
     public fun getAkumulasiHarga(detik: Int): String {
-        return "Rp " + ((getHarga() * detik) / (durasi * 3600)).toString()
+        totalBayar = ((getHarga() * detik) / (durasi * 3600))
+        return "Rp " + totalBayar.toString()
+    }
+    public fun getTotalBayar(): Int {
+        return totalBayar
     }
 }
