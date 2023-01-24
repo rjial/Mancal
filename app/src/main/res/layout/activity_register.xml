@@ -28,17 +28,21 @@
             android:layout_marginTop="30dp"
             android:textSize="32dp"
             android:textColor="@color/text_1"/>
+
         <EditText
+            android:id="@+id/txtNamaRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:height="60dp"
             android:layout_marginTop="32dp"
-            android:hint="Masukkan Username"
+            android:height="60dp"
+            android:background="@drawable/custom_input"
             android:drawableStart="@drawable/icon_person"
             android:drawablePadding="10dp"
+            android:hint="Nama"
             android:padding="16dp"
-            android:background="@drawable/custom_input"/>
+            android:inputType="textPersonName"/>
         <EditText
+            android:id="@+id/txtEmailRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:height="60dp"
@@ -47,9 +51,11 @@
             android:drawableStart="@drawable/icon_email"
             android:drawablePadding="10dp"
             android:padding="16dp"
-            android:background="@drawable/custom_input"/>
+            android:background="@drawable/custom_input"
+            android:inputType="textEmailAddress"/>
 
         <EditText
+            android:id="@+id/txtPasswordRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:height="60dp"
@@ -58,9 +64,11 @@
             android:drawableStart="@drawable/icon_password"
             android:drawablePadding="10dp"
             android:padding="16dp"
-            android:background="@drawable/custom_input"/>
+            android:background="@drawable/custom_input"
+            android:inputType="textPassword"/>
 
         <Button
+            android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"

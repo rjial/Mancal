@@ -20,6 +20,8 @@
         app:menu="@menu/navigation"
         android:background="@color/white"
         android:layout_gravity="bottom"
+        app:itemIconTint="@color/primary_color"
+        app:labelVisibilityMode="labeled"
         style=""/>
 
     <androidx.fragment.app.FragmentContainerView

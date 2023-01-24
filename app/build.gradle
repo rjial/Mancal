@@ -4,15 +4,17 @@ plugins {
     id 'com.google.gms.google-services'
     id 'kotlin-parcelize'
 }
+apply plugin: 'kotlin-kapt'
+
 
 android {
     namespace 'com.mancal.mancal'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.mancal.mancal"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -38,6 +40,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
     def lifecycle_version = "2.2.0"
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
@@ -57,7 +60,9 @@ dependencies {
     implementation "com.mapbox.navigation:android:2.9.5"
     implementation 'com.mapbox.mapboxsdk:mapbox-sdk-turf:6.9.0'
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
-
+    implementation 'androidx.room:room-runtime:2.5.0'
+    kapt 'androidx.room:room-compiler:2.5.0'
+    implementation 'androidx.room:room-ktx:2.5.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'

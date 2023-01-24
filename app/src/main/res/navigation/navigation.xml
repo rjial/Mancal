@@ -15,4 +15,14 @@
         android:name="com.mancal.mancal.SepedaFragment"
         android:label="fragment_sepeda"
         tools:layout="@layout/fragment_sepeda" />
+    <fragment
+        android:id="@+id/riwayatFragment"
+        android:name="com.mancal.mancal.RiwayatFragment"
+        android:label="fragment_riwayat"
+        tools:layout="@layout/fragment_riwayat" />
+    <fragment
+        android:id="@+id/akunFragment"
+        android:name="com.mancal.mancal.AkunFragment"
+        android:label="fragment_akun"
+        tools:layout="@layout/fragment_akun" />
 </navigation>

@@ -8,7 +8,7 @@
     <ImageView
         android:id="@+id/gambarLogin"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="290dp"
         android:src="@drawable/gambarlogin"
         android:scaleType="centerCrop"/>
 
@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:layout_marginTop="-50dp"
+            android:layout_marginTop="-60dp"
             android:layout_below="@id/gambarLogin"
             android:background="@drawable/card_corner"
             android:orientation="vertical">
@@ -29,6 +29,7 @@
                 android:textSize="32dp"
                 android:textColor="@color/text_1"/>
             <EditText
+                android:id="@+id/txtEmailLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:height="60dp"
@@ -39,6 +40,7 @@
                 android:padding="16dp"
                 android:background="@drawable/custom_input"/>
             <EditText
+                android:id="@+id/txtPasswordLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:height="60dp"
@@ -47,20 +49,31 @@
                 android:drawableStart="@drawable/icon_password"
                 android:drawablePadding="10dp"
                 android:padding="16dp"
-                android:background="@drawable/custom_input"/>
+                android:background="@drawable/custom_input"
+                android:inputType="textPassword"/>
+            <TextView
+                android:id="@+id/txtRegisterBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Register"
+                android:layout_gravity="end"
+                android:textSize="16sp"
+                android:textColor="@color/primary_color"
+                android:fontFamily="@font/inter_semibold"/>
             <Button
+                android:id="@+id/btnLogin"
+                style="@style/Theme.AppCompat.DayNight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:background="@drawable/custom_button"
-                android:src="@drawable/custom_button"
-                android:minHeight="50dp"
-                style="@style/Theme.AppCompat.DayNight"
-                android:text="Login"
                 android:fontFamily="@font/inter_bold"
+                android:minHeight="48dp"
+                android:src="@drawable/custom_button"
+                android:text="Login"
                 android:textColor="@color/white"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
 
 
         </LinearLayout>

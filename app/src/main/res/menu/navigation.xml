@@ -2,10 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/homeFragment"
+        android:icon="@drawable/beranda_icon"
         android:title="Home" />
 
     <item
         android:id="@+id/sepedaFragment"
+        android:icon="@drawable/sepeda_icon"
         android:title="Sepeda" />
+
+    <item
+        android:id="@+id/riwayatFragment"
+        android:icon="@drawable/history_icon"
+        android:title="Riwayat" />
+
+    <item
+        android:id="@+id/akunFragment"
+        android:icon="@drawable/profil_icon"
+        android:title="Profil" />
 
 </menu>
